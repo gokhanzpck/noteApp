@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="acıkTen">#D9BFA9</color>
+    <color name="orta">#A69281</color>
+    <color name="kapalı">#26221E</color>
+
+
+</resources>

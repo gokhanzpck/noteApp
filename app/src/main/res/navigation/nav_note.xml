@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_note"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.gokhanzopcuk.noteapp.Fragment.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/notDetayGecis"
+            app:destination="@id/noteDetayFragment" />
+        <action
+            android:id="@+id/notKayitGecis"
+            app:destination="@id/noteKayitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetayFragment"
+        android:name="com.gokhanzopcuk.noteapp.Fragment.NoteDetayFragment"
+        android:label="fragment_note_detay"
+        tools:layout="@layout/fragment_note_detay" >
+        <argument
+            android:name="note_bilgi"
+            app:argType="com.gokhanzopcuk.noteapp.DATA.noteBilgi" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteKayitFragment"
+        android:name="com.gokhanzopcuk.noteapp.Fragment.NoteKayitFragment"
+        android:label="fragment_note_kayit"
+        tools:layout="@layout/fragment_note_kayit" />
+</navigation>

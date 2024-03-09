@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kapalı"
+    tools:context=".Fragment.NoteDetayFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/kapalı"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="NOTE APP"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/baslikText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/orta"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:hint="BAŞLIK"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#950E0E"
+        android:textColorHint="#190A0A"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <EditText
+        android:id="@+id/aciklamaText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/orta"
+        android:ems="10"
+        android:fontFamily="@font/biorhyme_bold"
+        android:hint="AÇIKLAMA"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#131313"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikText2" />
+
+    <Button
+        android:id="@+id/buttonGüncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/orta"
+        android:text="GÜNCELLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aciklamaText2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
